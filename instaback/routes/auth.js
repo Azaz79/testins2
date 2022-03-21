@@ -1,3 +1,4 @@
+'use strict';
 const express= require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -10,7 +11,10 @@ const dotenv = require('dotenv');
 dotenv.config()
 const { cookie } = require('express/lib/response');
 
-
+function updateDatabase(data) {
+   // update the database
+  return newValue;
+}
 //Route 1:Create a user using POST /api/auth/createuser / no login require
 router.use(express.static('public'));
 
